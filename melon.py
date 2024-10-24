@@ -1,7 +1,3 @@
-#순위 1위부터 100위까지 노래 정보 가져오기
-#순위, 노래제목, 가수, 앨범정보
-#chatgpt 사용해서 결과를 flask, jinja를 이용해서 화면에 결과 보여주기
-
 import requests
 from bs4 import BeautifulSoup
 
