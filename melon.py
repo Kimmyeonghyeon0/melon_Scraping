@@ -21,7 +21,7 @@ def get_melon_chart():
         rank = i.select_one(".rank")
         song_title_element = i.select_one(".ellipsis.rank01 a")
         singer_element = i.select_one(".ellipsis.rank02 a")
-        song_id_element = i.select_one(".btn button_icons type03 song_info")
+        song_id_element = i.select_one(".ellipsis.rank03")
         if song_id_element is not None:
             song_id = song_id_element.get("value")
             info_url = f"https://www.melon.com/song/detail.htm?songId={song_id}"
