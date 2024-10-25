@@ -19,9 +19,9 @@ def get_melon_chart():
 
     for i in lst_top_100:
         rank = i.select_one(".rank")
-        song_title_element = i.select_one(".ellipsis.rank01 a")
-        singer_element = i.select_one(".ellipsis.rank02 a")
-        song_id_element = i.select_one(".ellipsis.rank03")
+        song_title_element = i.select_one(".ellipsis.rank01 a").text
+        singer_element = i.select_one(".checkEllipsis").text
+        song_id_element = i.select_one(".ellipsis.rank03").text
         if song_id_element is not None:
             song_id = song_id_element.get("value")
             info_url = f"https://www.melon.com/song/detail.htm?songId={song_id}"
